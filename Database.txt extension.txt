@@ -1,0 +1,110 @@
+Q 1  What is a database? explain with an example on why should we need a database?
+ans- A database is like a super organized collection of information. Imagine you're running a shop. Without a database, you might keep track of things like roduct details and sales in files or sreadsheets. But as your shop grows, this gets tricky.
+
+The various reasons a database is important are −
+
+Manages large amounts of data
+A database stores and manages a large amount of data on a daily basis. This would not be possible using any other tool such as a spreadsheet as they would simply not work.
+
+Accurate
+A database is pretty accurate as it has all sorts of build in constraints, checks etc. This means that the information available in a database is guaranteed to be correct in most cases.
+
+Easy to update data
+In a database, it is easy to update data using various Data Manipulation languages (DML) available. One of these languages is SQL.
+
+Security of data
+Databases have various methods to ensure security of data. There are user logins required before accessing a database and various access specifiers. These allow only authorised users to access the database.
+
+Data integrity
+This is ensured in databases by using various constraints for data. Data integrity in databases makes sure that the data is accurate and consistent in a database.
+
+Easy to research data
+It is very easy to access and research data in a database. This is done using Data Query Languages (DQL) which allow searching of any data in the database and performing computations on it. 
+
+
+
+Q.2 Write a short note on file based storage system explain the major challenges of a file based storage system?
+Ans- A file-based storage system is a traditional approach to storing and managing data, where data is stored in individual files on a computer’s file system. 
+
+The Major Challenges of File-Based Storage Systems.
+
+1. Data Redundancy: Data redundancy occurs when the same data is stored in multiple files or locations, resulting in inconsistencies and errors.
+
+2. Data Inconsistency: Data inconsistency is another major challenge in a file-based storage system. When data is stored in multiple files, it can become difficult to keep all the copies of the data in sync, resulting in inconsistencies.
+
+3. Limited Scalability: File-based storage systems are often not very scalable. As the amount of data in the system grows, it can become increasingly difficult to manage and maintain the system.
+
+4. Security: File-based storage systems are often less secure than database systems. In a file-based storage system, it can be difficult to control who has access to data and what they can do with it.
+
+5. Inefficient use of storage space: File-based systems can lead to inefficient use of storage space as files are duplicated or stored in multiple locations.
+
+6. Data Isolation: Data isolation refers to the fact that in a file-based storage system, data is often stored in separate files, which makes it difficult to access and share data across different applications or systems.
+
+
+Q3 What is DBMS? What as the need for DBMS?
+Ans- A DBMS serves as an interface between an end-user and a database, allowing users to create, read, update, and delete data in the database. DBMS manage the data, the database engine, and the database schema, allowing for data to be manipulated or extracted by users and other programs.
+Database software is used to create, edit, and maintain database files and records, enabling easier file and record creation, data entry, data editing, updating, and reporting. The software also handles data storage, backup and reporting, multi-access control, and security.
+
+Q4  ExSlain 5 challenges of file-based storage system which was tackled by DBMS?
+Ans-  Data Redundancy and Inconsistency:
+                 >> Challenge in File-Based Systeme : In file-based systems, the same data could be duplicated across multiple
+files. This redundancy led to inconsistancies and inefficiencies because changes made to one copy of the data might not be reflected in others.
+   Data Isolation and Inflexibility:
+        >>Challenge in File-Based System : Each application in a file-based system typically had its own set of files, making it difficult to share data bitween applications. This isolation hindered collaboration and made it challenging to maintain a unified view of the data.
+   Limited Data Retrieval CaSabilities:
+        >>Challenge in File-Based System :  Retrieving specific pieces of information from a    file-based system was often cumbersome. Manual searching through files was required, loading to inefficiencies and slower data retrirval.
+
+Q5  List Out the different types of classification in DBMS and explain?
+  Ans- There are four main distribution systems for database systems and these, in turn, can be used to classify the DBMS. 
+
+Centralized systems
+With a centralized database system, the DBMS and database are stored at a single site that is used by several other systems too.
+In the early 1980s, many Canadian libraries used the GEAC 8000 to convert their manual card catalogues to machine-readable centralized catalogue systems. Each book catalogue had a barcode field similar to those on supermarket products.
+
+Distributed database system
+In a distributed database system, the actual database and the DBMS software are distributed from various sites that are connected by a computer network.
+
+Homogeneous distributed database systems
+Homogeneous distributed database systems use the same DBMS software from multiple sites. Data exchange between these various sites can be handled easily. For example, library information systems by the same vendor, such as Geac Computer Corporation, use the same DBMS software which allows easy data exchange between the various Geac library sites.
+
+Heterogeneous distributed database systems
+In a heterogeneous distributed database system, different sites might use different DBMS software, but there is additional common software to support data exchange between these sites. For example, the various library database systems use the same machine-readable cataloguing (MARC) format to support library record data exchange.
+
+Q6.  What is the significance of Data Modelling and explain the types of Data Modelling?
+Ans-  Data modeling is a process that you use to define the data structure of a database. In other words, it’s a technique that you can use to create a database from scratch. This could be for a simple database where you’re storing information about customers and products, or it could be for something much more complicated, such as a system that’s used to track sales trends across a global network of stores. 
+
+Data modelers use a variety of techniques to create models. Though, there are 3 main types of data modeling: 
+
+1. Conceptual Data Model 
+Conceptual data models are the foundation of every data model that’s created. They help you understand which entities exist in your business and how they relate to each other. Conceptual models don’t include the details regarding the specific attributes attached to an entity. 
+2. Logical Data Model 
+Logical Data Model focuses on how data is stored in an organization’s systems. The logical model describes how data moves between its source (for example, a person or another system) and its destination (for example, a database). It uses entities, attributes, relationships, cardinality, and constraints to describe the entity set for each table in a relational database. 
+3. Physical Data Model 
+Physical data modeling is the process of defining the structure of a database schema to store information. The physical model is typically created by a database administrator or system analyst. It is used to create tables, indexes, and views, which are implemented through the use of Structured Query Language (SQL) statements. 
+
+Q7  Explain 3 schema architecture along with its advantages ?
+Ans- 1. Internal Level
+            The internal level has an internal schema which describes the physical storage structure of the database.
+The internal schema is also known as a physical schema.
+It uses the physical data model. It is used to define that how the data will be stored in a block.
+For Example: B-Trees, Hashing etc.
+             2. Conceptual Level
+ The conceptual schema describes the design of a database at the conceptual level. Conceptual level is also known as logical level.
+The conceptual schema describes the structure of the whole database.
+              3. External Level
+ At the external level, a database contains several schemas that sometimes called as subschema. The subschema is used to describe the different view of the database.
+An external schema is also known as view schema.
+
+Advantages:
+
+: Changes without Chaos: you can change how things look, how they're organized, or how they're stored
+without messing up everything else2
+: Everyone Gets What They Ned: People or apps see only what they're supposed to see. Students see grades,teachers see schedules, and nobody sees what they shouldn't.
+: Efficient and Secure Storage: Helps the computer store and manage data in a way that's fast, safe, and makes sense for the school.
+
+
+
+
+
+
+
